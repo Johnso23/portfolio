@@ -1,0 +1,468 @@
+#audio2 { 
+   display:none;
+}
+
+#titles 
+{
+	position: absolute;
+	width: 18em;
+	height: 50em;
+	bottom: 0;
+	left: 50%;
+	margin-left: -9em;
+	font-size: 350%;
+	font-weight: bold;
+	text-align: justify;
+	overflow: hidden;
+	transform-origin: 50% 100%;
+	transform: perspective(300px)
+	rotateX(25deg);
+}
+
+#titles:after
+{
+
+
+	position: absolute;
+	content: ' '/
+	left: 0;
+	right: 0;
+	top: 0;)
+	bottom: 60%;
+	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+		pointer-events: none;
+}
+}
+
+#titlecontent
+{
+	position: absolute;
+	top: 100%;
+	animation: scroll 100s linear 4s;
+
+infinite;
+}
+
+@keyframes scroll {
+	0% {top: 100%;}
+}
+
+
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+
+}
+
+    .parallax {
+    /* The image used */
+    background-image: url("https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/18838885_10211832462838482_4089957850735764635_n.jpg?oh=88128955dd0af630737d821a9925a1f0&oe=5A4F00E2");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+ 
+
+#primary_nav_wrap
+{
+    margin-top:15px
+}
+
+#primary_nav_wrap ul
+{
+    list-style:none;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
+}
+
+#primary_nav_wrap ul a
+{
+    display:block;
+    color:#333;
+    text-decoration:none;
+    font-weight:700;
+    font-size:12px;
+    line-height:32px;
+    padding:0 15px;
+    font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+    background:#ddd
+}
+
+#primary_nav_wrap ul li:hover
+{
+    background:#f6f6f6
+}
+
+#primary_nav_wrap ul ul
+{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+    float:none;
+    width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+    line-height:120%;
+    padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+    top:0;
+    left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+    display:block
+}
+
+.secret-spots{
+    background-image: url(images/sampleMap.JPG);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+  .parallax-1 {
+    /* The image used */
+    background-image: url("https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/18446594_1326425140738637_3389901919388475615_n.jpg?oh=8e7689f825784d8d871106259aa15d37&oe=5A59C919");
+    
+
+    /* Set a specific height */
+    min-height: 7d00px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shots-of-the-day{
+    background-image: url(https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/11221635_1702235673345120_3110455678152135515_n.jpg?oh=c61a9f3fa37012d377c4d41d21954393&oe=5A5E1AD7");
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@-webkit-keyframes spin {
+  from {-webkit-transform:rotateY(0); }
+  to {-webkit-transform:rotateY(-360deg);}
+}
+
+.wrapper {
+margin:0px auto 0 auto;
+ 
+  -webkit-perspective:800;
+  -webkit-perspective-origin:50% 90px;
+  -webkit-transition: -webkit-perspective, 5s;
+}
+
+.shape {
+  margin:150px auto;
+  height:200px;
+  width:200px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 15s infinite linear;
+  
+ }
+
+.wrapper:hover {
+-webkit-perspective-origin: 50% -100px;
+}
+
+.plane {
+  position:absolute;
+  width:200px;
+  height:200px;
+  background:rgba(0,0,0,0.6);
+  color:#fff;
+  font-size:10em;
+  text-align:center;
+}
+
+.plane p {
+  display:none;
+color:#fff;
+  background:#333;
+  font-size:0.2em;
+  padding:10px;
+  
+  
+  
+}
+
+.plane:hover p {
+display:inline;
+}
+
+.p1 {
+  background-image: url("images/walnuts.jpg");
+ 
+-webkit-transform: translateZ(250px);
+
+text-align: center;
+  }
+
+.p1:hover {
+
+}
+
+.p2 {
+    background-image: url("images/heath.jpg");
+-webkit-transform: rotateY(45deg) translateZ(250px);
+text-align: center;
+}
+
+.p3 {
+    background-image: url("images/brink.jpg");
+-webkit-transform: rotateY(90deg) translateZ(250px);s
+text-align: center;
+}
+
+.p4 {
+    background-image:url("images/moon.jpg");
+-webkit-transform: rotateY(135deg) translateZ(250px);
+text-align: center;
+}
+/*
+.p5 {
+    background-image: url("images/shaun-white.jpg")
+-webkit-transform: rotateY(180deg) translateZ(250px);
+text-align: center;
+}*/
+
+.p6 {
+    background-image: url("images/sean-jordan.jpg");
+-webkit-transform: rotateY(225deg) translateZ(250px);
+text-align: center;
+}
+
+.p7 {
+    background-image: url("images/rob.jpg");
+-webkit-transform: rotateY(270deg) translateZ(250px);
+text-align: center;
+}
+
+.p8 {
+    background-image: url("images/henrik.jpg");
+-webkit-transform: rotateY(315deg) translateZ(250px);
+text-align: center;
+}
+
+.king-of-kings{
+    width: 800px;
+    height: 400px;
+    background-size: cover;
+    margin:0 auto;
+    text-align: center;
+}
+
+.king1{
+    width: 200px;
+    height: 200px;
+    background-image: url("images/king-1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 10px;
+}
+
+.king2{
+    background-image: url("images/king-2.jpg");
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    float: left;
+    margin: 10px;
+}
+
+.king3{
+    background-image: url("images/king-3.jpg");
+    width: 300px;
+    height: 300px;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    float: left;
+    margin: 10px;
+}
+
+
+
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+.parallax-3{
+    /* The image used */
+    background-image: url("images/hawaii.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
